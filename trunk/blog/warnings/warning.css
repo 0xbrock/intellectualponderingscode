@@ -1,0 +1,22 @@
+.popup{
+    border:1px solid #CCC;
+ position:absolute;
+ width:250px;
+ border:1px solid #c93;
+ background:#ffc;
+ padding:5px;
+ right:3px;
+ top : -175px;
+ font-weight:bold;
+}
+.popup div p
+{
+ font-weight: normal;
+ padding: 3px;
+ margin: 0px;
+}
+.nohref, .popup div p {
+ cursor: pointer;
+ cursor: hand;
+ text-decoration: underline;
+}
