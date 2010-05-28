@@ -1,0 +1,22 @@
+{
+  "name": "Daptiv Change Window Name",
+  "version": "1.0",
+  "description": "Changes the name of the child browser window to allow multiple popups to open.  Also places the name of the requirement/bug name in the document title of the page.",
+  "content_scripts": [
+    {
+      "matches": ["http://na04.daptiv.com/global/itembrowser.aspx*","http://na04.daptiv.com/ResourcePlanning/ProjectRequests/browser.aspx*"],
+      "run_at": "document_start",
+      "js": ["daptiv_change_window_nam.user.js"]
+    }
+  ],
+  "icons": {
+      "128": "d-32x32.png",
+      "32": "daptiv.png"
+   },
+  "permissions": [
+    "http://na04.daptiv.com/global/itembrowser.aspx",
+    "http://na04.daptiv.com/ResourcePlanning/ProjectRequests/browser.aspx"
+  ],
+  "update_url": "http://intellectualponderings.googlecode.com/svn/trunk/DaptivChromeExtension/updates.xml"
+}
+/*//"css": ["mystyles.css"],*/
